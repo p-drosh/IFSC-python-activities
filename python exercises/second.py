@@ -7,6 +7,6 @@ def strconv():
     else:
         print(f" Converted Number: {num} ")
     finally:
-        print(f"Conversion attempt concluded: ")
+        print("Conversion attempt concluded: ")
 strconv()
 
