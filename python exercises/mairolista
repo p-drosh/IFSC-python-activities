@@ -1,0 +1,22 @@
+def maxlist(list):
+    if not list:
+        return None
+    grt = list[0]
+    for num in list:
+        if num > grt:
+            grt = num
+    return grt
+
+number = []
+i = 1
+
+while i < 5:
+    num = int(input(f"Insert the {i}º Number: "))
+    number.append(num)
+    i+=1
+
+print(f"List: {number}")
+print(f"The highest number: {maxlist(number)} ")
+
+
+

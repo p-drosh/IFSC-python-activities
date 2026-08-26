@@ -1,0 +1,22 @@
+def evenelmnt(element):
+    if element is None:
+        return None
+    return element % 2 == 0
+
+even = []
+numbers = []
+i = 1
+while True:
+    el  = int(input(f"Insert the {i}º element: "))
+    if el in numbers:
+        print("You´ve already insert this number. Finishing the loop")
+        break
+    numbers.append(el)
+    if evenelmnt(el):
+        even.append(el)
+    i+=1
+
+print(f"Numbers received {numbers}")
+print(f"List of even numbers {even}")
+
+

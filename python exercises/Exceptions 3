@@ -1,0 +1,11 @@
+def intconverter():
+    try:
+        num = int(input("Type any value: "))
+    except ValueError:
+        return 'Error: Invalid VAlue.'
+    else:
+        print("Conversion OK.")
+        return num
+    
+
+print(intconverter())

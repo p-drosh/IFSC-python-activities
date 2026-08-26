@@ -1,0 +1,11 @@
+L = [0, 0 , 0, 0 , 0]
+
+i = 0
+
+while i < len(L):
+    n = int(input("Insert something here: "))
+    L[i] = n
+    print(L)
+    i +=1
+
+print("List completed")

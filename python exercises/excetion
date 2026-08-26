@@ -1,0 +1,9 @@
+names = ['', "Ana", "Fabio", "Carlos"]
+for tent in range (3):
+    try:
+        i = int(input("Please, type a name which you want to print: "))
+        print(names[i])
+    except ValueError:
+        print("Digite um número: ")
+    except IndexError:
+        print("Valor inválido, digite outro número.")

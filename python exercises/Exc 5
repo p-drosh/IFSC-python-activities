@@ -1,0 +1,13 @@
+import math
+
+def calsqr(num):
+    try:
+        if num < 0:
+            raise ValueError("Negative Number")
+        return math.sqrt(num)
+    except TypeError:
+        return "Invalid type."
+
+num = float(input("Type a number, please: "))
+
+print(f"The square root of {num} is: {calsqr(num)}")

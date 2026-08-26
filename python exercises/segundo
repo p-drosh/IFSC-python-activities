@@ -1,0 +1,3 @@
+def concatenar(s1, s2):
+    return s1 + s2
+print(concatenar(15, 13))

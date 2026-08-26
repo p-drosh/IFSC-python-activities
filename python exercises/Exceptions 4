@@ -1,0 +1,13 @@
+class Insufbal(Exception):
+    pass
+def tkout(bal, val):
+    if val > bal:
+        raise Insufbal(f"Insuficcient balance! ${bal - val}")
+    return bal  - val
+
+try:
+    bal = 15000
+    val = float(input("The ammount which you want to take out: "))
+    print("$", tkout(bal , val))
+except Insufbal as e:
+    print(e) 

@@ -1,0 +1,28 @@
+def det3x3(mat):
+    a, b ,c = mat[0]
+    d, e ,f = mat[1]
+    g, h, i = mat[2]
+    return a*(e*i - f*h) - b*(d*i - f*g) + c*(d*h -e*g)
+
+def preenchmat():
+    matriz = []
+    print("Preenchendo matriz 3x3: ")
+
+    for i in range(3):
+        linha =[]
+
+        for j in range(3):
+            valor = float(input(f"Digite o elemento [{i + 1}][{j + 1}]: "))
+            linha.append(valor)
+
+        matriz.append(linha)
+
+    return matriz
+
+
+print("\n Determinante Matriz 3x3: ")
+matrizuser = preenchmat()
+resultado = det3x3(matrizuser)
+print(f"Matriz inserida: {matrizuser}")
+print(f"Resultado: {resultado}")
+

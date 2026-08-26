@@ -1,0 +1,13 @@
+class ageerror(Exception):
+    pass
+def ageval(age):
+    if not (0 < age < 120):
+        raise ageerror("you can not be newer than 0 or older than 120 bitchass. ")
+    return age
+
+try:
+    age = int(input("What's your age bro: "))
+    ageval(age)
+    print("yeah i can believe that")
+except ageerror as e:
+    print(e)

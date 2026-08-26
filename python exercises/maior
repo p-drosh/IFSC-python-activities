@@ -1,0 +1,13 @@
+def grt (b, a, c):
+    if a > b and a > c:
+        return a
+    elif b > a and b > c:
+        return b
+    else:
+        return c
+
+b = float(input("Insert a number: "))
+a = float(input("Insert another number: "))
+c = float(input("Insert another number: "))
+
+print(grt(b, a , c))

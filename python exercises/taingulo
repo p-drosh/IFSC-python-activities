@@ -1,0 +1,16 @@
+import math
+
+def calctriangleA (x, y, z):
+    if not (x + y > z and x + z > y and y + z > x): 
+        raise ValueError (" Não é um triangulo válido.")
+    p = (x + y + z) / 2
+    area = math.sqrt(p*(p - z)*(p - x)*(p - y))
+    return area
+
+try:
+    x = float(input("Escreva o comprimento do lado x: "))
+    y = float(input("Escreva o comprimento do lado y: "))
+    z = float(input("Escreva o comprimento do lado z: "))
+    print(calctriangleA (x, y, z))
+except ValueError as e:
+    print(e)

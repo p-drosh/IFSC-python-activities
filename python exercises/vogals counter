@@ -1,0 +1,12 @@
+def vglcou(text):
+    if not isinstance(text, str):
+        raise TypeError("The parameter must be a string.")
+    vogal= "aeiouAEIOU"
+    return sum(1 for char in text if char in vogal)
+
+if __name__ == "__main__":
+    examples = [
+        "Hello World", "", "How are you", "CYGTF", "There´s a test this friday", "124", "HDEIHJOKUU"
+    ]
+    for s in examples:
+        print(f"'{s}':, {vglcou(s)} vogals.")

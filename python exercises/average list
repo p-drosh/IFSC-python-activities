@@ -1,0 +1,17 @@
+def avrgrade(list):
+    if not list:
+        return 0
+    if len(list) == 1:
+        return list[0]
+    return (list[0] + avrgrade(list[1:]) * (len(list) - 1)) / len(list)
+
+grade = []
+grd = 0
+i = 1
+while grd >= 0:
+    grd = int(input(f"Insert the {i}º Grade: "))
+    if grd >= 0:
+        grade.append(grd)
+        i+=1
+if grade:
+    print(f" Your average is: {avrgrade(grade)}")

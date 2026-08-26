@@ -1,0 +1,7 @@
+def trgarea(b, h):
+    return (b * h) / 2
+
+b = float(input("The size of the base: "))
+h = float(input("The size of the height: "))
+
+print(f"The triangle area is: ", trgarea(b, h))
